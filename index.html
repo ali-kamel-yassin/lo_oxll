@@ -1,16 +1,154 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <title>علي كامل | Ali Kamil</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .profile {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      padding: 40px;
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    
+    .profile:hover {
+      transform: translateY(-5px);
+    }
+    
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #6a11cb;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 30px;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .btn {
+      padding: 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .btn:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+    
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn:hover:after {
+      transform: translateY(0);
+    }
+    
+    /* ألوان خاصة بكل منصة */
+    .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+    .facebook { background: linear-gradient(45deg, #3b5998, #3b5998); }
+    .linkedin { background: linear-gradient(45deg, #0077b5, #0077b5); }
+    .telegram { background: linear-gradient(45deg, #0088cc, #0088cc); }
+    .discord { background: linear-gradient(45deg, #7289da, #7289da); }
+    .twitch { background: linear-gradient(45deg, #6441a5, #6441a5); }
+    .x { background: linear-gradient(45deg, #000000, #000000); }
+    .threads { background: linear-gradient(45deg, #000000, #000000); }
+    .tiktok { background: linear-gradient(45deg, #000000, #25f4ee, #fe2c55); }
+    .youtube { background: linear-gradient(45deg, #ff0000, #ff0000); }
+    .pinterest { background: linear-gradient(45deg, #bd081c, #bd081c); }
+    
+    /* أيقونات باستخدام رموز Unicode */
+    .btn:before {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+    
+    .instagram:before { content: '📸'; }
+    .facebook:before { content: '📘'; }
+    .linkedin:before { content: '💼'; }
+    .telegram:before { content: '✈️'; }
+    .discord:before { content: '💬'; }
+    .twitch:before { content: '🎮'; }
+    .x:before { content: '🐦'; }
+    .threads:before { content: '🧵'; }
+    .tiktok:before { content: '🎵'; }
+    .youtube:before { content: '📺'; }
+    .pinterest:before { content: '📌'; }
+    
+    /* تصميم متجاوب */
+    @media (max-width: 600px) {
+      .profile {
+        padding: 30px 20px;
+      }
+      
+      .avatar {
+        width: 120px;
+        height: 120px;
+      }
+      
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <main class="profile">
-    <img class="avatar" src="6316c18ca67da202107.png"
-alt="علي كامل | Ali Kamil">
+    <!-- استبدل مسار الصورة بالمسار الصحيح في مستودعك -->
+    <img class="avatar" src="https://via.placeholder.com/150?text=صورة+الملف+الشخصي" alt="علي كامل | Ali Kamil">
     <h1>علي كامل | Ali Kamil</h1>
 
     <section class="links">
@@ -28,10 +166,4 @@ alt="علي كامل | Ali Kamil">
     </section>
   </main>
 </body>
-
 </html>
-
-
-
-
-
