@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.profile {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.btn {
+  display: block;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* ترتيب الأزراب حسب المطلوب */
+.instagram { background: linear-gradient(45deg, #fdf497 0%, #fd5949 30%, #d6249f 60%, #285AEB 100%); }
+.facebook { background: #4267b2; }
+.linkedin { background: #0173b2; }
+.telegram { background: #30a4df; }
+.discord { background: #5865f2; }
+.twitch { background: #9146ff; }
+.x { background: #000000; }
+.threads { background: #000000; }
+.tiktok { background: #000; }
+.youtube { background: #fe0000; }
+.pinterest { background: #e60023; }
